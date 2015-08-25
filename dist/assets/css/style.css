@@ -1,0 +1,71 @@
+body {
+  overflow: hidden;
+}
+a.btns {
+  font-family: Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  position: absolute;
+  font-size: 50px;
+  color: #cc0000;
+  display: block;
+  width: 100px;
+  height: 100px;
+  top: 45%;
+  transform: rotate(-45deg);
+}
+a.btns:before {
+  position: absolute;
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  background-color: #fff;
+}
+a#left {
+  left: -50px;
+}
+a#left:before {
+  content: "↖";
+  text-align: right;
+  line-height: 168px;
+  padding: 13px;
+  margin: -26px;
+}
+a#right {
+  right: -50px;
+}
+a#right:before {
+  content: "↘";
+  text-align: left;
+  line-height: 31px;
+  padding: 13px;
+}
+a#right:after {
+  top: 50px;
+  left: 50px;
+}
+div.container-telefono .issue {
+  opacity: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
+  background-size: cover;
+}
+div.container-telefono .active {
+  opacity: 1;
+}
+div.container-telefono img {
+  width: 100%;
+}
+#dots a {
+  text-decoration: none;
+}
+#dots a.active {
+  text-decoration: underline;
+}
